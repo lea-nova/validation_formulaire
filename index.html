@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Inscription</h1>
+        <form action="bienvenue.html" onsubmit="return validerForm()">
+            <!--NOM : doit avoir plus que 3 caractères-->
+            <label for="nom">Nom </label><br>
+            <div id="erreurNom"></div>
+            <input type="text" id="nom" placeholder="&#128100  Votre nom">
+            <br><br>
+            <!-- Prénom -->
+            <label for="Prenom">Prénom </label><br>
+            <div id="erreurPrenom"></div>
+            <input type="text" id="prenom" placeholder="&#128100 Votre prénom">
+            <br><br>
+            <!-- Date de naissance -->
+            <label for="date">Date de naissance </label><br>
+            <div id="erreurDate"></div>
+            <input type="text" id="date" placeholder=" &#128100 Votre date de naissance">
+            <br><br>
+            <!-- Lieu de naissance -->
+            <label for=" naissance">Lieu de naissance </label><br>
+            <div id="erreurLieu"></div>
+            <input type="text" id="naissance" placeholder="&#128100 Votre lieu de naissance">
+            <br><br>
+
+            <!-- Signe astro -->
+            <label for="signeAstro">Signe astrologique </label><br>
+            <div id="erreurSigne"></div>
+            <!-- Faire un select -->
+            <div>
+                <select name="signeAstro" id="signeAstro">
+                    <option value="">Votre signe astrologique</option>
+                    <option value="Bélier">♈ Bélier</option>
+                    <option value="Taureau">♉ Taureau</option>
+                    <option value="Gémeaux">♊Gémeaux</option>
+                    <option value="Cancer">♋Cancer</option>
+                    <option value="Lion">♌Lion</option>
+                    <option value="Vierge">♍Vierge</option>
+                    <option value="Balance">♎Balance</option>
+                    <option value="Scorpion">♏Scorpion</option>
+                    <option value="Sagittaire">♐Sagittaire</option>
+                    <option value="Capricorne">♑Capricorne</option>
+                    <option value="Verseau">♒Verseau</option>
+                    <option value="Poisson">♓Poisson</option>
+                </select>
+            </div>
+            <br><br>
+            <!-- Email -->
+            <label for="email">Email </label><br>
+            <div id="erreurEmail"></div>
+            <input type="text" id="email" placeholder="&#9993 Votre email">
+            <br><br>
+            <!-- Mot de passe -->
+            <label for="mdp">Mot de passe </label><br>
+            <div id="erreurMdp"></div>
+            <div class="password-container">
+                <input type="password" id="mdp" placeholder="&#128274 Votre mot de passe"><span><i
+                        class="fa-regular fa-eye"></i><i class="fa-regular fa-eye-slash hidden"></i></span>
+            </div>
+            <br><br>
+            <!-- Confirmation mot de passe -->
+            <label for="confirmation">Confirmer le mot de passe </label><br>
+            <div id="erreurConfirmationMdp"></div>
+            <div class="password-container">
+                <input type="password" id="confirmation" placeholder="&#128274Ecrire même mot de passe" value="">
+                <span><i class="fa-regular fa-eye "></i><i class="fa-regular fa-eye-slash hidden"></i></span>
+            </div>
+            <br><br>
+
+            <!-- Présentation -->
+            <label for="description">Présentation en quelques mots </label>
+            <div id="erreurDescription"></div>
+            <textarea id="description" cols="30" rows="10" onkeyup="compteur()"></textarea>
+            <div id="compteur" class="compteur-car">0 Caractère(s)</div>
+            <input type="submit" class="submit" value="INSCRIPTION">
+        </form>
+
+    </section>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/fb5bd6aacd.js" crossorigin="anonymous"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>

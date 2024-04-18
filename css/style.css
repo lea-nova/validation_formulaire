@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../images/fond.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+
+section {
+    padding: 10px;
+    height: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div {
+    font-weight: 400;
+}
+
+h1 {
+    padding: 0.75em;
+    font-size: 2em;
+    text-align: center;
+}
+
+form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+
+
+select {
+
+    height: 30px;
+    width: 95%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: initial 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+label {
+    font-weight: 400;
+}
+
+input {
+    width: 95%;
+    height: 30px;
+    border-bottom: initial 3px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.password-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aquamarine; */
+    text-align: center;
+    height: 30px;
+    border-bottom: initial 3px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.password-container input {
+    width: 95%;
+}
+
+.password-container span {
+    height: 10px;
+    width: 5%;
+    text-align: center;
+}
+
+textarea {
+    width: 95%;
+    border-bottom: initial gray 3px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+div {
+    font-size: 0.9em;
+
+}
+
+span .hidden {
+    visibility: hidden;
+}
+
+span .visible {
+    visibility: visible;
+}
+
+.submit {
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+    background-image: url("../images/fond.png");
+    background-size: cover;
+    margin: auto;
+    color: white;
+    border-radius: 25px;
+    border: grey initial 2px;
+}
+
+.compteur-car {
+    text-align: right;
+    color: red;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width : 500px) {
+    section {
+        width: 90%;
+    }
+}
+
+
+/* ---------------- PAGE bienvenue ----------------------- */
